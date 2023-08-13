@@ -1,0 +1,147 @@
+/* una lista de los colores para trabajar con nuestra maqueta*/
+.colores{
+    color: black;
+    color: #FFFF;
+    color: #F1E9DB;
+    color: #5DB7DE;
+    color: #A39B8B;
+    color: #716A5C
+
+}
+* {
+    outline: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #F1E9DB;
+    color: #07020D;
+    margin: 0; /* margin y padding ambos 0 para que los bordes toquen fondo */
+    padding: 0; 
+}
+
+
+ul{
+    list-style: none; /*saca las viñetas del pie de página */
+    padding: 0;
+    margin: 0;
+}
+
+li{
+  
+    display: inline-block;
+    /*LI es un elemento de bloque */
+    margin: 20px 45px; /*separamos los elementos entre si*/
+}
+img{max-width: 100%;}
+h1{text-decoration: underline #5DB7DE dashed;}
+
+
+header{background-color: #07020D;
+        padding-top: 60px;
+       
+}
+nav{
+    
+    margin: 0 auto; /*margin barra de navegacion no se mueve mas */
+    max-width: 1370px;
+    
+}
+
+section{
+    text-align: center;
+    
+}
+
+
+/* Estilos de los links de la barra de navegacion.
+los links tienen 4 estados
+1er estado: reposo
+2do: link visitado: definir los estilos para cuando un link ya fue visitado
+3ro: pasamos por arriba con el mouse
+4to: estado cuando hacemos click sobre el link
+*/
+
+a{
+    display: inline-block;
+    padding: 25px 50px;
+    border-radius: 50px;
+}
+a.nav:link{
+    color: #FFFFFF;
+    text-decoration: none; /* sacar subrayado */
+
+}
+
+a.nav:visited{ 
+ color: #FFFFFF;   
+}
+a.nav:hover{
+    background-color: #5DB7DE;
+    color: #07020D;
+    font-weight: bold;
+}
+a.nav:active{
+    background-color: tomato;
+}
+
+/* ---------------------------------------------------*/
+/* Estilos para los formularios*/
+
+#contacto label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#contacto input, #contacto textarea {
+ display: block; /*agrega los saltos de linea */
+ width: 60%; /*ancho */
+ max-width: 600px; /*ancho maximo */
+ margin: 15px auto; /*centra el elemento */
+
+ padding: 10px; /* area texto */
+ box-sizing: border-box; /*ajuste del padding en los elementos */
+border-radius: 10px; /* ajuste del radio de las esquinas*/
+border: 5px double #5DB7DE; /* grososr decoracion y color */
+border: none;
+border-bottom: 2px solid #716A5C;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+    border-bottom: 2px solid #5DB7DE;
+}
+
+#contacto textarea {
+    height: 200px;
+
+}
+
+#contacto .opciones {
+    display: inline-block; /*linea bloque, no tiene saltos de linea y el ancho del elemento es fijado por su contenido */
+    width: auto;
+    margin: 5px;
+} 
+#contacto .submit {
+    background-color: #5DB7DE;
+    font-weight: 700; 
+    border: none;
+}
+
+
+
+/* Estilos para el Section y Footer */
+
+section, footer {
+    text-align: center;
+}
+
+footer{
+    background-color: #716A5C;
+    padding: 20px;
+    color: #F1E9DB;
+}
+
+article {
+    margin-bottom: 50px;
+}
